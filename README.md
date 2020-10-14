@@ -20,9 +20,11 @@ Manuscript under preparation
 **Utilisation:** multi-omics integrative analysis, predictive simulation
 **Field:** metabolic-network reconstruction  
 **Type of Model:** reconstruction, curated  
-**Model Source:** Human-GEM
-**Omic Source:** genomics, metabolomics  
-**Taxonomy:** _Rattus norvegicus_  
+**Model source:** [Human-GEM](https://doi.org/10.1126/scisignal.aaz1482)  
+**Omic source:** genomics; metabolomics  
+**Taxonomic name:** _Rattus norvegicus_  
+**Taxonomy ID:** [10116](https://identifiers.org/taxonomy:10116)   
+**Genome ID:** [GCF_000001895.5](https://identifiers.org/insdc.gca:GCF_000001895.5)    
 **Metabolic System:** general metabolism  
 **Tissue:**  
 **Bioreactor:**    
