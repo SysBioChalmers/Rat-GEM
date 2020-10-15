@@ -72,7 +72,7 @@ Manuscript under preparation
 
 ## Websites
 
-- [Metabolic Atlas](https://metabolicatlas.org/) enables visualization and exploration of Human-GEM content.
+- [Metabolic Atlas](https://metabolicatlas.org/) enables visualization and exploration of Rat-GEM content.
 
 
 ### Contributing
