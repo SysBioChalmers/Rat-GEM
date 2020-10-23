@@ -53,7 +53,7 @@ Manuscript under preparation
 
 
 ### Installation Instructions
-* Clone the [master branch](https://github.com/SysBioChalmers/Human-GEM/tree/master) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Human-GEM/releases/latest).
+* Clone the [master branch](https://github.com/SysBioChalmers/Rat-GEM/tree/master) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Rat-GEM/releases/latest).
 * Add the directory to your MATLAB path (instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)).
 
 
