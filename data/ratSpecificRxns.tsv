@@ -8,3 +8,4 @@ rxns	equations	ub	lb	eccodes	subSystems	grRules	rxnReferences	rxnConfidenceScore
 "MA_20007"	"2 H2O[p] + O2[p] + 1,3,7-Trimethyluric acid[p] <=> CO2[p] + H2O2[p] + 3,6,8-Trimethylallantoin[p]"	1000	-1000	"1.7.3.3"	"Caffeine metabolism"	"Uox"	""	2	"R07981"	""	""	"MNXR111564"
 "MA_20008"	"O2[r] + L-gulono-1,4-lactone[r] => H2O2[r] + ascorbate[r] + H+[r]"	1000	0	"1.1.3.8"	"Ascorbate and aldarate metabolism"	"Gulo"	""	2	"R10053"	"RXN-13689"	""	"MNXR116004"
 "MA_20009"	"O2[r] + L-gulono-1,4-lactone[r] => H2O2[r] + L-xylo-Hexulonolactone[r]"	1000	0	"1.1.3.8"	"Ascorbate and aldarate metabolism"	"Gulo"	""	2	"R03184"	"L-GULONOLACTONE-OXIDASE-RXN"	""	"MNXR140097"
+"MA_20016"	"ascorbate[r] => ascorbate[c]"	1000	0	""	"Transport"	""	""	0	""	""	""	""
