@@ -36,7 +36,6 @@ ihuman.rxns(ind) = rxnAssoc.rxnMAID(ind);
 % get ortholog pairs from human to rat
 ratOrthologPairs = extractAllianceGenomeOrthologs('human2RatOrthologs.json');
 ratGEM = getModelFromOrthology(ihuman, ratOrthologPairs);
-ratGEM.id = 'Rat-GEM';
 
 
 
@@ -68,8 +67,15 @@ rxnsToAdd.subSystems = cellfun(@(s) {{s}}, rxnsToAdd.subSystems);
 
 
 
+%% Gap-filling for biomass formation
+[ratGEM, gapfillNetwork]=gapfill4Biomass(ratGEM,ihuman);
+% Added 0 reactions for gap-filling
+
+
+
 %% Save the generated model into Matlab, Yaml and SBML formats
 
+ratGEM.id = 'Rat-GEM';
 save('../model/Rat-GEM.mat', 'ratGEM');
 writeHumanYaml(ratGEM, '../model/Rat-GEM.yml');
 exportModel(ratGEM, '../model/Rat-GEM.xml');
