@@ -2,7 +2,7 @@
 % FILE NAME:    masterScriptRatGEM.m
 %
 % PURPOSE: This script is for reconstruction of the Rat-GEM, by using
-%          the Human-GEM as template and taking in account mouse-specific
+%          the Human-GEM as template and taking into account rat-specific
 %          pathways/reactions.
 %
 %
