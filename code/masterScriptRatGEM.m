@@ -68,7 +68,7 @@ rxnsToAdd.subSystems = cellfun(@(s) {{s}}, rxnsToAdd.subSystems);
 
 
 %% Gap-filling for biomass formation
-[ratGEM, gapfillNetwork]=gapfill4Biomass(ratGEM,ihuman);
+[ratGEM, gapfillNetwork]=gapfill4EssentialTasks(ratGEM,ihuman);
 % Added 0 reactions for gap-filling
 
 
