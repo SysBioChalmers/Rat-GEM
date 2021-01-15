@@ -2,7 +2,7 @@
 % FILE NAME:    masterScriptRatGEM.m
 %
 % PURPOSE: This script is for reconstruction of the Rat-GEM, by using
-%          the Human-GEM as template and taking in account mouse-specific
+%          the Human-GEM as template and taking into account rat-specific
 %          pathways/reactions.
 %
 %
@@ -36,7 +36,6 @@ ihuman.rxns(ind) = rxnAssoc.rxnMAID(ind);
 % get ortholog pairs from human to rat
 ratOrthologPairs = extractAllianceGenomeOrthologs('human2RatOrthologs.json');
 ratGEM = getModelFromOrthology(ihuman, ratOrthologPairs);
-ratGEM.id = 'Rat-GEM';
 
 
 
@@ -68,8 +67,15 @@ rxnsToAdd.subSystems = cellfun(@(s) {{s}}, rxnsToAdd.subSystems);
 
 
 
+%% Gap-filling for biomass formation
+[ratGEM, gapfillNetwork]=gapfill4EssentialTasks(ratGEM,ihuman);
+% Added 0 reactions for gap-filling
+
+
+
 %% Save the generated model into Matlab, Yaml and SBML formats
 
+ratGEM.id = 'Rat-GEM';
 save('../model/Rat-GEM.mat', 'ratGEM');
 writeHumanYaml(ratGEM, '../model/Rat-GEM.yml');
 exportModel(ratGEM, '../model/Rat-GEM.xml');
