@@ -35,7 +35,7 @@ Manuscript under preparation
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Rattus norvegicus_ |   Human-GEM |  13102  | 8408 | 3499 |
+|_Rattus norvegicus_ |   Human-GEM |  13086  | 8386 | 3502 |
 
 
 ## Installation
