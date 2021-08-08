@@ -52,7 +52,7 @@ This repository contains the latest version of Rat-GEM, a rat genome-scale metab
 
 
 ### Installation Instructions
-* Clone the [master branch](https://github.com/SysBioChalmers/Rat-GEM/tree/master) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Rat-GEM/releases/latest).
+* Clone the [main branch](https://github.com/SysBioChalmers/Rat-GEM/tree/main) of this repository, or [download the latest release](https://github.com/SysBioChalmers/Rat-GEM/releases/latest).
 * Add the directory to your MATLAB path (instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)).
 
 
@@ -60,7 +60,7 @@ This repository contains the latest version of Rat-GEM, a rat genome-scale metab
 
 #### Loading/saving the model
 
-`Rat-GEM.mat` (Recommended if on `master` branch)
+`Rat-GEM.mat` (Recommended if on `main` branch)
 * Load and save using the built-in MATLAB `load()` and `save()` functions.
 
 `Rat-GEM.xml` (SBML format)
