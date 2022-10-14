@@ -42,10 +42,10 @@ if isequal(rxnAssoc.rxns, ratGEM.rxns) && isequal(metAssoc.mets, ratGEM.mets)
     exportTsvFile(metAssoc,'../model/metabolites.tsv');
 end
 
-ratGEM = annotateGEM(ratGEM,'../model',{'rxn','met'});  % add annotation data to structure
-ratGEM.id = regexprep(ratGEM.id,'-','');  % remove dash from model ID since it causes problems with SBML I/O
 save('../model/Rat-GEM.mat', 'ratGEM');
 exportYaml(ratGEM, '../model/Rat-GEM.yml');
+ratGEM = annotateGEM(ratGEM,'../model',{'rxn','met'});  % add annotation data to structure
+ratGEM.id = regexprep(ratGEM.id,'-','');  % remove dash from model ID since it causes problems with SBML I/O
 exportModel(ratGEM, '../model/Rat-GEM.xml');
 
 
