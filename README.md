@@ -35,7 +35,7 @@ This repository contains the latest version of Rat-GEM, a rat genome-scale metab
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Rattus norvegicus_ |   Human-GEM |  13071  | 8374 | 2953 |
+|_Rattus norvegicus_ |   Human-GEM |  13028  | 8377 | 2953 |
 
 
 ## Installation
