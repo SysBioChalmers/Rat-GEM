@@ -17,7 +17,7 @@ addpath(genpath('../../Rat-GEM/'));
 %% Prepare Rat ortholog pairs and species-specific network
 
 % get ortholog pairs from human to rat
-ratOrthologPairs = extractAllianceGenomeOrthologs('human2RatOrthologs.json');
+ratOrthologPairs = extractAllianceGenomeOrthologs('human2RatOrthologs.tsv');
 
 % load species-specific rxns and mets
 rxnsToAdd = importTsvFile('ratSpecificRxns.tsv');
@@ -42,6 +42,7 @@ if isequal(rxnAssoc.rxns, ratGEM.rxns) && isequal(metAssoc.mets, ratGEM.mets)
     exportTsvFile(metAssoc,'../model/metabolites.tsv');
 end
 
+ratGEM.geneShortNames = ratGEM.genes;
 save('../model/Rat-GEM.mat', 'ratGEM');
 exportYaml(ratGEM, '../model/Rat-GEM.yml');
 ratGEM = annotateGEM(ratGEM,'../model',{'rxn','met'});  % add annotation data to structure
