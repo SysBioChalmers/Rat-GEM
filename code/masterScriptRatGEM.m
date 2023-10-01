@@ -26,7 +26,7 @@ metsToAdd = importTsvFile('ratSpecificMets.tsv');
 
 %% Generate Rat-GEM
 [ratGEM, speciesSpecNetwork, gapfillNetwork]=updateAnimalGEM(...
-    ratOrthologPairs,rxnsToAdd,metsToAdd,'Rat-GEM');
+    ratOrthologPairs,rxnsToAdd,metsToAdd,'Rat-GEM','true');
 
 
 %% Update annotations
