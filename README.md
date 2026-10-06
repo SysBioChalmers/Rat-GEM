@@ -35,7 +35,9 @@ This repository contains the latest version of Rat-GEM, a rat genome-scale metab
 
 |Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|:-----:|
-|_Rattus norvegicus_ |   Human-GEM |  13028  | 8377 | 2953 |
+|_Rattus norvegicus_ |   Human-GEM 2.1.0 |  12746  | 8376 | 2786 |
+
+The model is generated from [Human-GEM](https://github.com/SysBioChalmers/Human-GEM) release 2.1.0 with `code/animalGEM/generateAnimalGEM.py` in the Human-GEM repository; see [code/README.md](code/README.md).
 
 
 ## Installation
